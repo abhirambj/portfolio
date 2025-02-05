@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Import Link component
 import CustomButton from "../buttons/CustomButton";
 import NavBar from "../navbar/NavBar";
 import { motion } from "framer-motion";
@@ -7,7 +8,6 @@ import AnimatedSubtitle from "../text anim/AnimatedSubtitle";
 import AnimatedTitle from "../text anim/AnimatedTitle";
 import { animateScroll } from "react-scroll";
 import React from "react";
-import Resume from "../../pages/Resume";
 
 const Hero = () => {
 	const scrollToContact = () => {
@@ -85,35 +85,36 @@ const Hero = () => {
 								}}
 							/>
 
-							<CustomButton
-								label={"Resume"}
-								component={Resume}
-								to="/resume"
-								svg={
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										viewBox="0 0 20 20"
-										fill="currentColor"
-										className="w-5 h-5"
-									>
-										<path
-											fillRule="evenodd"
-											d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
-											clipRule="evenodd"
-										/>
-									</svg>
-								}
-								style={{
-									background:
-										"linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(232, 121, 249, 0.4))",
-									boxShadow:
-										"0 6px 12px rgba(138, 43, 226, 0.3), 0 4px 10px rgba(232, 121, 249, 0.3)",
-									"&:hover": {
+							{/* Updated Resume Button */}
+							<Link to="/resume">
+								<CustomButton
+									label={"Resume"}
+									svg={
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 20 20"
+											fill="currentColor"
+											className="w-5 h-5"
+										>
+											<path
+												fillRule="evenodd"
+												d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
+												clipRule="evenodd"
+											/>
+										</svg>
+									}
+									style={{
 										background:
-											"linear-gradient(135deg, rgba(138, 43, 226, 0.5), rgba(232, 121, 249, 0.6))",
-									},
-								}}
-							/>
+											"linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(232, 121, 249, 0.4))",
+										boxShadow:
+											"0 6px 12px rgba(138, 43, 226, 0.3), 0 4px 10px rgba(232, 121, 249, 0.3)",
+										"&:hover": {
+											background:
+												"linear-gradient(135deg, rgba(138, 43, 226, 0.5), rgba(232, 121, 249, 0.6))",
+										},
+									}}
+								/>
+							</Link>
 						</div>
 					</div>
 				</div>

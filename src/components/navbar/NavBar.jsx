@@ -37,7 +37,7 @@ const NavBar = () => {
 		<motion.header
 			animate={{ y: 0, opacity: 1 }}
 			initial={{ y: -100, opacity: 0 }}
-			className={`fixed top-1 w-2/3 transform -translate-x-1/2 rounded-lg z-50 transition-all duration-300 ${
+			className={`fixed top-0 w-2/3 transform -translate-x-1/2 rounded-lg z-50 transition-all duration-300 ${
 				isScrolled
 					? "bg-white bg-opacity-10 backdrop-blur-xl shadow-lg"
 					: "bg-transparent"
