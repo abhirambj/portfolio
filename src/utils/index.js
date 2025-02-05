@@ -35,12 +35,6 @@ export const projects = [
 			"A full-stack fitness management application built using Jakarta EE technologies (JSF, EJB, JPA) and MySQL. The app includes robust security features, caching mechanisms, and optimized database queries for faster response times.",
 		tags: ["Jakarta EE", "MySQL", "Security", "Performance Optimization"],
 	},
-	{
-		title: "TogaCommerce",
-		description:
-			"Designed and implemented a scalable e-commerce platform for Fortune 500 clients, using Docker for load balancing, NodeJS for backend services, and React (TypeScript) for the frontend, resulting in a 15% increase in sales.",
-		tags: ["NodeJS", "React", "Docker", "E-commerce"],
-	},
 ];
 
 export const skillsWork = [
@@ -83,7 +77,6 @@ export const skillsWork = [
 
 export const certificates = [
 	"Oracle Cloud Infrastructure Foundations 2021 Associate",
-	"AWS Certified Solutions Architect - Associate (Expected Jan 2025)",
 ];
 
 export const articles = [
