@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Import Link component
+import { NavLink } from "react-router-dom";
 import CustomButton from "../buttons/CustomButton";
 import NavBar from "../navbar/NavBar";
 import { motion } from "framer-motion";
@@ -86,7 +86,7 @@ const Hero = () => {
 							/>
 
 							{/* Updated Resume Button */}
-							<Link to="/resume">
+							<NavLink to="/resume">
 								<CustomButton
 									label={"Resume"}
 									svg={
@@ -114,7 +114,7 @@ const Hero = () => {
 										},
 									}}
 								/>
-							</Link>
+							</NavLink>
 						</div>
 					</div>
 				</div>
