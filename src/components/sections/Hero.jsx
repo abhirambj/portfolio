@@ -87,7 +87,7 @@ const Hero = () => {
 							<CustomButton
 								label={"Resume"}
 								onClick={() => {
-									window.location.href = "/resume";
+									window.location.href = "/portfolio/resume/";
 								}}
 								svg={
 									<svg

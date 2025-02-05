@@ -1,5 +1,4 @@
 import portfolio from "../assets/images/portfolio-v1.png";
-import systemDesign from "../assets/images/system-design.png";
 
 export const headlines = [
 	"Hi, I'm Abhiram.",
