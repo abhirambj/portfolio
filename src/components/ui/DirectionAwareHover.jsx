@@ -44,7 +44,7 @@ export const DirectionAwareHover = ({
 	const getImagePath = (url) => {
 		return url.startsWith("http") || url.startsWith("www")
 			? url
-			: `src/assets/images/${url}`;
+			: `/src/assets/images/${url}`;
 	};
 
 	return (

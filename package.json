@@ -5,7 +5,7 @@
 		"email": "abhiram.bj@gmail.com"
 	},
 	"private": true,
-	"homepage": "https://abhirambj.github.io/portfolio/",
+	"homepage": "https://abhirambj.github.io/portfolio",
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
