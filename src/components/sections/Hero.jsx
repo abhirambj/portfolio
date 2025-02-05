@@ -7,6 +7,7 @@ import AnimatedSubtitle from "../text anim/AnimatedSubtitle";
 import AnimatedTitle from "../text anim/AnimatedTitle";
 import { animateScroll } from "react-scroll";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 	const scrollToContact = () => {
@@ -86,9 +87,8 @@ const Hero = () => {
 
 							<CustomButton
 								label={"Resume"}
-								onClick={() => {
-									window.location.href = "/portfolio/resume";
-								}}
+								component={Link}
+								to="/resume"
 								svg={
 									<svg
 										xmlns="http://www.w3.org/2000/svg"

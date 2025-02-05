@@ -41,12 +41,6 @@ export const DirectionAwareHover = ({
 		return d;
 	};
 
-	const getImagePath = (url) => {
-		return url.startsWith("http") || url.startsWith("www")
-			? url
-			: `/src/assets/images/${url}`;
-	};
-
 	return (
 		<motion.div
 			onMouseEnter={handleMouseEnter}
@@ -74,7 +68,7 @@ export const DirectionAwareHover = ({
 							className={`h-full w-full object-cover scale-[1.15] ${imageClassName}`}
 							width="100"
 							height="100"
-							src={getImagePath(imageUrl)}
+							src={imageUrl}
 						/>
 					</motion.div>
 				</motion.div>

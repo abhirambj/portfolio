@@ -1,4 +1,5 @@
 import portfolio from "../assets/images/portfolio-v1.png";
+import systemDesign from "../assets/images/system-design.png";
 
 export const headlines = [
 	"Hi, I'm Abhiram.",
@@ -81,7 +82,7 @@ export const certificates = [
 
 export const articles = [
 	{
-		image: "system-design.png",
+		image: systemDesign,
 		title: "System Design Primer",
 		description:
 			"Want to learn System Design? This is the best resource to get started.",
