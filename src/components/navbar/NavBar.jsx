@@ -98,7 +98,7 @@ const NavBar = () => {
 							: "hidden"
 					} md:static`}
 				>
-					{location.pathname === "/portfolio/" ? (
+					{location.pathname === "/" ? (
 						[
 							"Home",
 							"About",
@@ -128,7 +128,7 @@ const NavBar = () => {
 					) : (
 						<li className="relative group">
 							<NavLink
-								to="/portfolio/"
+								to="/"
 								className="cursor-pointer relative flex items-center rounded-lg px-3 py-1 font-josefin-sans text-gray-300 hover:text-secondary transition-all duration-300"
 								onClick={() => setIsMobileMenuOpen(false)}
 							>
