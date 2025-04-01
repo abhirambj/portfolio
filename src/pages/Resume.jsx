@@ -11,12 +11,13 @@ import {
 	FaEnvelope,
 	FaPhoneAlt,
 	FaLinkedin,
+	FaGithub,
 } from "react-icons/fa";
 
 const Resume = () => {
 	const [isEditing, setIsEditing] = useState(false);
 	const [description, setDescription] = useState(
-		"Skilled **full-stack developer** with expertise in diverse programming languages and frameworks. Proven ability to deliver impactful projects on GitHub, fostering a **collaborative environment**. Adept at tackling **complex challenges** and thriving in team settings. Seeking to leverage skills in a dynamic role."
+		"Full Stack Developer with 2+ years of experience building scalable, high-performance systems in cloud-based environments. Skilled in Java, Spring Boot, Node.js, and PL/SQL, with hands-on proficiency in AWS, Docker, and Kubernetes. Experienced in microservices, RESTful APIs, CI/CD pipelines, and real-time data pipelines using Kafka and Redis. Built resilient backend systems supporting 1K+ daily users, reducing latency by 30% and improving uptime by 25%. Collaborated across frontend and backend teams to ship full-stack features and production-ready APIs. Seeking full stack engineering roles focused on scalable architectures, cloud-native platforms, and product-focused development."
 	);
 
 	const handleSave = () => {
@@ -37,125 +38,138 @@ const Resume = () => {
 						Abhiram Bylahalli Jagadish
 					</h1>
 					<p className="text-lg md:text-xl text-white mt-2">
-						Software Developer
+						Full Stack Developer
 					</p>
 				</div>
 
 				{/* Editable Description */}
-				<div
-					className="relative bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-6 mt-6"
-					style={{
-						boxShadow:
-							"0 6px 12px rgba(255, 255, 255, 0.1), 0 4px 10px rgba(0, 0, 0, 0.3)",
-					}}
-				>
+				<div className="relative bg-[#1e2536] backdrop-blur-md border border-white/20 rounded-lg mt-6">
+					<div className="flex items-center gap-2 px-4 py-2 border-b border-white/20 bg-black/20">
+						<div className="flex gap-1">
+							<div className="w-3 h-3 rounded-full bg-red-500"></div>
+							<div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+							<div className="w-3 h-3 rounded-full bg-green-500"></div>
+						</div>
+						<span className="text-sm text-white/60">
+							summary.txt
+						</span>
+						{isEditing && (
+							<span className="text-xs text-secondary ml-auto">
+								editing...
+							</span>
+						)}
+					</div>
 					{isEditing ? (
-						<div className="flex flex-col gap-4">
+						<div className="p-4">
+							<div className="flex items-center text-white/60 text-sm mb-2">
+								<span className="mr-2">$</span>
+								<span className="animate-pulse">|</span>
+							</div>
 							<textarea
 								value={description}
 								onChange={(e) => setDescription(e.target.value)}
-								className="w-full p-4 text-white bg-transparent border border-gray-600 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
-								rows="5"
+								className="w-full bg-transparent text-white/90 resize-none focus:outline-none font-mono text-sm leading-relaxed"
+								rows="8"
 								placeholder="Edit your description..."
-								style={{
-									backdropFilter: "blur(8px)",
-									boxShadow:
-										"inset 0 4px 8px rgba(0, 0, 0, 0.2)",
-								}}
+								autoFocus
 							/>
-							<div className="flex justify-end gap-4">
+							<div className="flex justify-end gap-3 mt-4 font-mono text-sm">
 								<button
 									onClick={() => setIsEditing(false)}
-									className="px-4 py-2 text-sm font-medium text-gray-400 border border-gray-500 rounded-lg hover:bg-gray-700 hover:text-white transition"
+									className="px-3 py-1 text-white/60 hover:text-white/90 transition-colors"
 								>
-									Cancel
+									:q!
 								</button>
 								<button
 									onClick={handleSave}
-									className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 active:scale-95 transition-all"
-									style={{
-										boxShadow:
-											"0 4px 8px rgba(0, 123, 255, 0.3), 0 4px 12px rgba(0, 0, 0, 0.2)",
-									}}
+									className="px-3 py-1 text-secondary hover:text-secondary/90 transition-colors"
 								>
-									Save Changes
+									:wq
 								</button>
 							</div>
 						</div>
 					) : (
 						<div
-							className="text-gray-300 leading-relaxed cursor-pointer"
 							onClick={() => setIsEditing(true)}
-							style={{
-								padding: "0.5rem",
-								borderRadius: "0.5rem",
-								transition: "all 0.3s ease",
-							}}
+							className="p-6 cursor-pointer group"
 						>
-							<p
-								dangerouslySetInnerHTML={{
-									__html: description.replace(
-										/\*\*(.*?)\*\*/g,
-										"<strong>$1</strong>"
-									),
-								}}
-							/>
-							<p className="text-sm text-white mt-2">
-								Click to edit
-							</p>
+							<div className="text-white/80 leading-relaxed font-mono text-sm">
+								<p
+									dangerouslySetInnerHTML={{
+										__html: description.replace(
+											/\*\*(.*?)\*\*/g,
+											"<strong>$1</strong>"
+										),
+									}}
+								/>
+							</div>
+							<div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+								<span className="text-xs text-white/40">
+									press to edit
+								</span>
+							</div>
 						</div>
 					)}
 				</div>
 
 				{/* Contact Information */}
-				<div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-left mt-8">
+				<div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-6">
 					{[
 						{
 							label: "Address",
 							value: "USA",
-							icon: <FaMapMarkerAlt className="text-white" />,
+							icon: <FaMapMarkerAlt className="text-secondary" />,
 						},
 						{
 							label: "Email",
 							value: "abhiram.bj@gmail.com",
 							isLink: true,
 							linkType: "mailto",
-							icon: <FaEnvelope className="text-white" />,
+							icon: <FaEnvelope className="text-secondary" />,
 						},
 						{
 							label: "Phone",
 							value: "+1 (312) 877-8160",
 							isLink: true,
 							linkType: "tel",
-							icon: <FaPhoneAlt className="text-white" />,
+							icon: <FaPhoneAlt className="text-secondary" />,
 						},
 						{
-							label: "Linkedin",
+							label: "LinkedIn",
 							value: "linkedin.com/in/abhirambj",
 							isLink: true,
-							linkType: "https",
-							icon: <FaLinkedin className="text-white" />,
+							linkType: "https://",
+							icon: <FaLinkedin className="text-secondary" />,
+						},
+						{
+							label: "GitHub",
+							value: "github.com/abhirambj",
+							isLink: true,
+							linkType: "https://",
+							icon: <FaGithub className="text-secondary" />,
 						},
 					].map(({ label, value, isLink, linkType, icon }, index) => (
-						<div key={index} className="text-gray-400">
-							<div className="flex items-center gap-2">
-								{icon}
-								<p className="font-semibold text-white">
-									{label}
-								</p>
-							</div>
+						<div key={index} className="relative group">
 							{isLink ? (
 								<a
-									href={`${linkType || ""}:${value}`}
+									href={`${linkType || ""}${value}`}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-gray-400 hover:text-blue-500 transition"
-								>
+									className="absolute inset-0 z-10 cursor-pointer"
+									aria-label={`${label}: ${value}`}
+								></a>
+							) : null}
+							<div className="flex flex-col items-center text-center p-4 rounded-lg bg-white/10 transition-all duration-300 h-full group-hover:scale-105 group-hover:bg-[#323b57] border border-white/20">
+								<div className="bg-white/10 backdrop-blur-md w-12 h-12 rounded-full flex items-center justify-center mb-2">
+									{icon}
+								</div>
+								<p className="font-semibold text-white text-sm">
+									{label}
+								</p>
+								<p className="text-gray-400 text-sm mt-1">
 									{value}
-								</a>
-							) : (
-								<p>{value}</p>
-							)}
+								</p>
+							</div>
 						</div>
 					))}
 				</div>
