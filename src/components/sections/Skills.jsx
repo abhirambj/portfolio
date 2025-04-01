@@ -17,6 +17,10 @@ import {
 	SiTailwindcss,
 	SiDocker,
 	SiAmazoncloudwatch,
+	SiTypescript,
+	SiRedux,
+	SiPrometheus,
+	SiGrafana,
 	SiKubernetes,
 	SiAmazonec2,
 	SiAwslambda,
@@ -26,7 +30,6 @@ import {
 	SiPostgresql,
 	SiJenkins,
 	SiMysql,
-	SiGithub,
 	SiSpring,
 	SiCypress,
 	SiStorybook,
@@ -43,6 +46,9 @@ import { skillsWork, certificates } from "../../utils";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { GrOracle } from "react-icons/gr";
+import { TbBrandNextjs, TbRouteSquare2 } from "react-icons/tb";
+import { BiGitBranch } from "react-icons/bi";
+import { BsKanbanFill } from "react-icons/bs";
 
 const skillIcons = {
 	ReactJS: <FaReact size={36} />,
@@ -68,15 +74,14 @@ const skillIcons = {
 	PostgreSQL: <SiPostgresql size={36} />,
 	Storybook: <SiStorybook size={36} />,
 	MySQL: <SiMysql size={36} />,
-	Git: <SiGithub size={36} />,
-	"RESTful APIs": <FaCode size={36} />,
+	Git: <BiGitBranch size={36} />,
 	"Object-Oriented Programming": <MdOutlineDataObject size={36} />,
 	Cypress: <SiCypress size={36} />,
 	"CI/CD Pipelines": <SiJenkins size={36} />,
 	"Distributed Systems": <SiGithubactions size={36} />,
 	Microservices: <MdArchitecture size={36} />,
-	Spring: <SiSpring size={36} />,
-	"Github Actions": <SiGithubactions size={36} />,
+	"Spring Boot": <SiSpring size={36} />,
+	"GitHub Actions": <SiGithubactions size={36} />,
 	DynamoDB: <SiAmazondynamodb size={36} />,
 	"Data Structures & Algorithms": <MdOutlineDataObject size={36} />,
 	"Apache Kafka": <SiApachekafka size={36} />,
@@ -84,6 +89,13 @@ const skillIcons = {
 	"Open Source": <DiOpensource size={36} />,
 	"Open Authorization 2.0": <SiAuth0 />,
 	"JSON Web Tokens (JWT)": <SiJsonwebtokens size={36} />,
+	"Next.js": <TbBrandNextjs size={36} />,
+	TypeScript: <SiTypescript size={36} />,
+	Redux: <SiRedux size={36} />,
+	Prometheus: <SiPrometheus size={36} />,
+	Grafana: <SiGrafana size={36} />,
+	"RESTful APIs": <TbRouteSquare2 size={36} />,
+	"Agile/Scrum": <BsKanbanFill size={36} />,
 };
 
 const certIcons = {
