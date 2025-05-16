@@ -25,24 +25,37 @@ const ProjectCard = ({ project, isMobile, onClick, isSelected }) => {
 					isHovered || isSelected ? "opacity-0" : "opacity-100"
 				}`}
 			>
-				<h3 className="text-xl font-semibold text-white">{project.title}</h3>
-				<p className="text-base text-gray-300 mt-2">{project.description}</p>
+				<h3 className="text-xl font-semibold text-white">
+					{project.title}
+				</h3>
+				<p className="text-base text-gray-300 mt-2">
+					{project.description}
+				</p>
 			</div>
 
 			<div
-				className={`absolute inset-0 p-6 flex flex-col justify-between transition-all duration-500 ${
-					isHovered || isSelected ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+				className={`absolute inset-0 p-6 flex flex-col justify-between transition-all duration-500 overflow-y-auto ${
+					isHovered || isSelected
+						? "opacity-100 translate-y-0"
+						: "opacity-0 translate-y-6"
 				}`}
+				style={{ maxHeight: "100%" }}
 			>
 				<div className="space-y-4">
 					<div className="border-b border-white/10 pb-4">
-						<h3 className="text-xl font-semibold text-white">{project.title}</h3>
-						<p className="text-sm text-gray-300 leading-relaxed mt-2">{project.description}</p>
+						<h3 className="text-xl font-semibold text-white">
+							{project.title}
+						</h3>
+						<p className="text-sm text-gray-300 leading-relaxed mt-2">
+							{project.description}
+						</p>
 					</div>
 
 					{!project.image && project.tags && (
 						<div className="mt-6">
-							<h4 className="text-sm text-white/60 mb-3">Technologies Used</h4>
+							<h4 className="text-sm text-white/60 mb-3">
+								Technologies Used
+							</h4>
 							<div className="flex flex-wrap gap-3">
 								{project.tags.map((tag, index) => (
 									<span

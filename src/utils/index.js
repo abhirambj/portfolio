@@ -5,7 +5,7 @@ import systemDesign from "../assets/images/system-design.png";
 export const headlines = [
 	"Hi, I'm Abhiram.",
 	"A Full-Stack Developer.",
-	"With 2+ years of experience building scalable, high-performance systems in cloud-native environments at Uber and Agilant Solutions. I specialize in backend-first full-stack development using Java, Spring Boot, Node.js, React, Kafka, and AWS.",
+	"With 2+ years of experience building scalable, cloud-native systems at Uber and Agilant Solutions. I specialize in backend-first full-stack development using Java, Spring Boot, Node.js, React, Kafka, and AWS — having built real-time pipelines, microservices, and production-ready UIs for systems used by 1K+ daily users.",
 ];
 
 export const projects = [
@@ -55,8 +55,9 @@ export const projects = [
 	{
 		title: "Peak Physique",
 		description:
-			"A fitness management platform built with Jakarta EE, supporting user registration, workout tracking, and caching for fast performance.",
-		tags: ["Jakarta EE", "MySQL", "Security", "Performance Optimization"],
+			"An enterprise-grade fitness management system built with Jakarta EE, featuring role-based access for Admins, Coaches, and Clients. Supports personalized workout and meal plans, progress tracking, and a responsive UI using JSF and PrimeFaces.",
+		tags: ["Jakarta EE", "JSF", "JPA", "PrimeFaces", "MySQL", "Java"],
+		linkGithub: "https://github.com/abhirambj/peak-physique",
 	},
 ];
 
