@@ -70,33 +70,31 @@ export const About = () => {
 							<span className="font-semibold text-purple-400">
 								Full Stack Developer
 							</span>
-							. I write code that occasionally works on the first
-							try (okay, maybe not the *first* try... but I get
-							there eventually).
+							. I architect and deliver scalable, cloud-native,
+							and distributed systems with a focus on
+							backend-first full stack development.
 						</p>
 						<p className="mt-3 text-xl text-gray-400">
-							I've wrangled backend systems at{" "}
+							With 3+ years of experience at{" "}
 							<span className="font-semibold text-indigo-400">
 								Uber
 							</span>{" "}
-							and crafted e-commerce UI magic at{" "}
+							and{" "}
 							<span className="font-semibold text-purple-400">
 								Agilant
 							</span>
-							. Think Java, Spring Boot, Node.js, React, and
-							enough Docker containers to make the ocean jealous.
+							, I specialize in building low-latency APIs, robust
+							microservices, and high-performance UIs for fintech,
+							ERP, and enterprise platforms. My toolkit includes
+							Java, Spring Boot, React, Node.js, GraphQL, Docker,
+							Kubernetes, and AWS.
 						</p>
 						<p className="mt-3 text-xl text-gray-400">
-							When I’m not slashing latency by 30% or building
-							event-driven flows with Kafka, you’ll find me
-							optimizing coffee-to-code ratio or debating tabs vs.
-							spaces (team tabs, obviously).
-						</p>
-						<p className="mt-3 text-xl text-gray-400">
-							My happy place? Building clean APIs, scalable
-							architectures, and tools that make dev teams smile.
-							Let’s build something cool—one clean commit at a
-							time. 🚀
+							When I’m not optimizing system reliability or
+							automating CI/CD pipelines, you’ll find me
+							experimenting with distributed architectures,
+							deploying containerized workloads, or debating tabs
+							vs. spaces (team tabs, obviously).
 						</p>
 					</div>
 				</motion.div>
@@ -104,20 +102,23 @@ export const About = () => {
 				<div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 					{[
 						{
-							title: "5+ Projects",
-							subtitle: "Coffee-Fueled to Cloud-Deployed ☕🚀",
+							title: "8+ Projects",
+							subtitle:
+								"From Cloud-Native to Production-Ready ☁️🚀",
 						},
 						{
-							title: "2+ Years",
-							subtitle: "Java, Kafka, Node.js, Repeat 🔁",
+							title: "3+ Years",
+							subtitle:
+								"Building APIs, Distributed Systems, CI/CD 🔁",
 						},
 						{
 							title: "Tech Stack",
-							subtitle: "Spring Boot | React | AWS | Docker",
+							subtitle:
+								"Java, Spring Boot, React, AWS, Docker, GraphQL, Kubernetes",
 						},
 						{
-							title: "Oracle Certified",
-							subtitle: "Officially Not a Bot 🤖",
+							title: "Certifications",
+							subtitle: "Oracle Cloud Certified Associate 🤖",
 						},
 					].map((item, index) => (
 						<motion.div

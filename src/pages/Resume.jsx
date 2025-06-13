@@ -17,7 +17,7 @@ import {
 const Resume = () => {
 	const [isEditing, setIsEditing] = useState(false);
 	const [description, setDescription] = useState(
-		"Full Stack Developer with 2+ years of experience building scalable, high-performance systems in cloud-based environments. Skilled in Java, Spring Boot, Node.js, and PL/SQL, with hands-on proficiency in AWS, Docker, and Kubernetes. Experienced in microservices, RESTful APIs, CI/CD pipelines, and real-time data pipelines using Kafka and Redis. Built resilient backend systems supporting 1K+ daily users, reducing latency by 30% and improving uptime by 25%. Collaborated across frontend and backend teams to ship full-stack features and production-ready APIs. Seeking full stack engineering roles focused on scalable architectures, cloud-native platforms, and product-focused development."
+		"Full Stack Developer with 3+ years of hands-on experience designing and delivering scalable, cloud-native applications in fintech, ERP, healthcare, and e-commerce. Expert in Java, Spring Boot, React.js, and AWS, with a proven track record in architecting microservices, optimizing REST APIs, and building robust CI/CD pipelines using modern DevOps practices. Adept at end-to-end development, API integration, and system performance optimization. Known for building low-latency, high-availability systems and driving user experience through strong ownership and cross-functional collaboration on business-critical features."
 	);
 
 	const handleSave = () => {
