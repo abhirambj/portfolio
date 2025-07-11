@@ -1,11 +1,12 @@
 import portfolio from "../assets/images/portfolio-v1.png";
 import image_portfolio from "../assets/images/image_portfolio.png";
 import systemDesign from "../assets/images/system-design.png";
+import lld from "../assets/images/lld.png";
 
 export const headlines = [
 	"Hi, I'm Abhiram.",
 	"Full Stack Developer.",
-	"Full Stack Developer with 3+ years’ experience building scalable, cloud-native solutions in fintech, ERP, healthcare, and e-commerce. Specialized in Java, Spring Boot, React.js, and AWS, with expertise in designing microservices, optimizing REST APIs, and delivering robust, low-latency systems for 1K+ daily users.",
+	"Full Stack Developer with 3+ years’ experience delivering scalable, cloud-native solutions for fintech, ERP, healthcare, and e-commerce. Specialized in Java, Spring Boot, React.js, and AWS, with deep expertise in microservices, REST APIs, and distributed systems for high-traffic platforms.",
 ];
 
 export const projects = [
@@ -135,6 +136,13 @@ export const articles = [
 			"Want to learn System Design? This is the best resource to get started.",
 		url: "https://github.com/abhirambj/system-design-primer?tab=readme-ov-file#system-design-topics-start-here",
 	},
+	{
+		image: lld,
+		title: "Low Level Design Primer",
+		description:
+			"Want to learn Low Level Design? This is the best resource to get started.",
+		url: "https://github.com/ashishps1/awesome-low-level-design",
+	},
 ];
 
 export const metadata = {
@@ -168,15 +176,15 @@ export const workExperiences = [
 			"GitHub Actions",
 		],
 		achievements: [
-			"Architected a reusable UI component library, reducing development cycles by 30% and lowering costs across three flagship projects.",
-			"Optimized state management and data integration with Redux and GraphQL, boosting responsiveness and decreasing user wait times by 20%.",
-			"Implemented secure RESTful APIs and authentication in Spring Boot, minimizing post-release bug rates by 15% and cutting support costs.",
-			"Automated CI/CD workflows with Jenkins, GitHub Actions, Docker, and Kubernetes, accelerating deployments and saving 8+ hours per sprint.",
-			"Validated accessibility and mobile readiness via Storybook, achieving compatibility with 100% of user devices.",
+			"Engineered a reusable UI component library adopted by 3 enterprise projects, reducing development cycles by 30% and saving $20,000 annually.",
+			"Elevated application responsiveness by 20% through advanced Redux and GraphQL optimization, improving user satisfaction scores by 15%.",
+			"Instituted secure RESTful APIs and robust authentication in Spring Boot, lowering post-release bug rates by 15%.",
+			"Automated CI/CD pipelines (Jenkins, GitHub Actions, Docker, Kubernetes), increasing deployment frequency by 50% and saving 8+ hours per sprint.",
 		],
 	},
 	{
-		company: "Uber Technologies Inc. (via Accenture)",
+		company:
+			"Accenture Solutions Pvt Ltd. (Consultant at Uber Technologies Inc)",
 		period: "Oct 2021 - Jul 2023",
 		duration: "(1 year 10 months)",
 		role: "Associate Software Developer – Consultant",
@@ -199,11 +207,10 @@ export const workExperiences = [
 			"Git/GitHub",
 		],
 		achievements: [
-			"Developed and maintained backend modules in Java and Spring Boot, automating AP/AR for thousands of daily transactions and expediting month-end closes by 20%.",
-			"Built and optimized dashboards and reporting tools with Angular and GraphQL, delivering near real-time financial insights.",
-			"Integrated Oracle ERP with AWS DynamoDB/RDS, streamlining data pipelines and reducing sync errors by 25%.",
-			"Refined CI/CD pipelines in Jenkins, ensuring reliable automated deployments and cutting environment sync issues by 15%.",
-			"Collaborated with finance, data engineering, and QA teams to deliver critical features and resolve production incidents.",
+			"Streamlined AP/AR workflows for 10,000+ daily transactions, cutting manual effort by 40% and accelerating month-end close by 20%.",
+			"Delivered real-time financial dashboards with Angular and GraphQL, improving decision-making speed by 30% for business users.",
+			"Integrated Oracle ERP with AWS (DynamoDB, RDS), reducing data sync errors by 25% and supporting $2M+ in monthly transactions.",
+			"Enhanced CI/CD reliability, decreasing environment sync issues by 15% and enabling zero-downtime deployments.",
 		],
 	},
 	{
@@ -225,11 +232,10 @@ export const workExperiences = [
 			"PM2",
 		],
 		achievements: [
-			"Designed and launched a cloud-native ordering platform, enabling seamless product discovery, checkout, and inventory management for B2B/B2C clients.",
-			"Engineered RESTful microservices with Node.js, Express.js, and Next.js for modular feature delivery and rapid prototyping.",
-			"Structured scalable PostgreSQL schemas and asynchronous workflows, increasing transaction speed and reducing latency by 20%.",
-			"Implemented Kafka-driven messaging for event processing and real-time sync with MongoDB change streams.",
-			"Standardized API interfaces and automated health monitoring with PM2 and GitLab CI, minimizing downtime and enabling proactive response.",
+			"Launched a cloud-native ordering platform for B2B/B2C clients, processing 5,000+ monthly transactions and enabling real-time inventory management.",
+			"Architected modular RESTful microservices (Node.js, Express.js, Next.js), accelerating feature delivery by 25%.",
+			"Optimized PostgreSQL schemas and asynchronous workflows, boosting transaction speeds by 20%.",
+			"Established Kafka-driven messaging for distributed microservices, ensuring reliable order and payment updates.",
 		],
 	},
 ];

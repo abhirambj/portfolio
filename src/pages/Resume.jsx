@@ -17,7 +17,7 @@ import {
 const Resume = () => {
 	const [isEditing, setIsEditing] = useState(false);
 	const [description, setDescription] = useState(
-		"Full Stack Developer with 3+ years of hands-on experience designing and delivering scalable, cloud-native applications in fintech, ERP, healthcare, and e-commerce. Expert in Java, Spring Boot, React.js, and AWS, with a proven track record in architecting microservices, optimizing REST APIs, and building robust CI/CD pipelines using modern DevOps practices. Adept at end-to-end development, API integration, and system performance optimization. Known for building low-latency, high-availability systems and driving user experience through strong ownership and cross-functional collaboration on business-critical features."
+		"Full Stack Developer with 3+ years of hands-on experience designing and delivering scalable, cloud-native applications across fintech, ERP, healthcare, and e-commerce. Specialized in Java, Spring Boot, React.js, and AWS, with expertise in architecting microservices, optimizing REST APIs, and implementing robust CI/CD pipelines using modern DevOps practices. Proven record of building low-latency, high-availability systems and driving user experience through strong ownership and cross-functional collaboration on business-critical features."
 	);
 
 	const handleSave = () => {
@@ -124,14 +124,14 @@ const Resume = () => {
 							label: "Email",
 							value: "abhiram.bj@gmail.com",
 							isLink: true,
-							linkType: "mailto",
+							linkType: "mailto:",
 							icon: <FaEnvelope className="text-secondary" />,
 						},
 						{
 							label: "Phone",
 							value: "+1 (312) 877-8160",
 							isLink: true,
-							linkType: "tel",
+							linkType: "tel:",
 							icon: <FaPhoneAlt className="text-secondary" />,
 						},
 						{

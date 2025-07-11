@@ -11,6 +11,8 @@ import {
 	FaCss3Alt,
 	FaBootstrap,
 	FaAws,
+	FaJs,
+	FaAngular,
 } from "react-icons/fa";
 import { MdOutlineDataObject, MdArchitecture } from "react-icons/md";
 import {
@@ -32,6 +34,7 @@ import {
 	SiMysql,
 	SiSpring,
 	SiCypress,
+	SiSentry,
 	SiStorybook,
 	SiAmazondynamodb,
 	SiApachekafka,
@@ -39,13 +42,15 @@ import {
 	SiGithubactions,
 	SiJsonwebtokens,
 	SiAuth0,
+	SiNeo4J,
+	SiPm2,
 } from "react-icons/si";
 import { DiOpensource } from "react-icons/di";
 import SectionHeader from "../ui/SectionHeader";
 import { skillsWork, certificates } from "../../utils";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { GrOracle } from "react-icons/gr";
+import { GrOracle, GrGraphQl } from "react-icons/gr";
 import { TbBrandNextjs, TbRouteSquare2 } from "react-icons/tb";
 import { BiGitBranch } from "react-icons/bi";
 import { BsKanbanFill } from "react-icons/bs";
@@ -54,15 +59,20 @@ const skillIcons = {
 	ReactJS: <FaReact size={36} />,
 	JUnit: <SiJunit5 size={36} />,
 	NodeJS: <FaNodeJs size={36} />,
+	"AWS RDS": <FaAws size={36} />,
 	Java: <FaJava size={36} />,
+	Neo4j: <SiNeo4J size={36} />,
 	Python: <FaPython size={36} />,
 	Redis: <SiRedis size={36} />,
+	Angular: <FaAngular size={36} />,
+	GraphQL: <GrGraphQl size={36} />,
 	"AWS EC2": <SiAmazonec2 size={36} />,
 	"AWS S3": <FaAws size={36} />,
 	"AWS EBS": <FaAws size={36} />,
 	JavaScript: <FaJsSquare size={36} />,
 	HTML: <FaHtml5 size={36} />,
 	CSS: <FaCss3Alt size={36} />,
+	Sentry: <SiSentry size={36} />,
 	"Tailwind CSS": <SiTailwindcss size={36} />,
 	Bootstrap: <FaBootstrap size={36} />,
 	Docker: <SiDocker size={36} />,
@@ -84,7 +94,9 @@ const skillIcons = {
 	"GitHub Actions": <SiGithubactions size={36} />,
 	DynamoDB: <SiAmazondynamodb size={36} />,
 	"Data Structures & Algorithms": <MdOutlineDataObject size={36} />,
-	"Apache Kafka": <SiApachekafka size={36} />,
+	Kafka: <SiApachekafka size={36} />,
+	PM2: <SiPm2 size={36} />,
+	Mockito: <FaJs size={36} />,
 	"AWS CloudWatch": <SiAmazoncloudwatch size={36} />,
 	"Open Source": <DiOpensource size={36} />,
 	"Open Authorization 2.0": <SiAuth0 />,
