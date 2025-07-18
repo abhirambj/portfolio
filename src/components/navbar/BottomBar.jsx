@@ -10,7 +10,7 @@ const BottomBar = () => {
 
 	const handleView = () => {
 		window.open(
-			"https://drive.google.com/file/d/1brkmTqQ9Qi1MPsy2WknNdA7YiOso5C0l/view?usp=sharing",
+			"https://drive.google.com/file/d/1HeocMYaSJXgdK9mgJnlq7_3UFVEwAn5W/view?usp=sharing",
 			"_blank"
 		);
 	};

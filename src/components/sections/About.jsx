@@ -68,14 +68,13 @@ export const About = () => {
 						<p className="mt-4 text-xl text-gray-300 leading-relaxed">
 							Hi! I'm Abhiram — your friendly neighborhood{" "}
 							<span className="font-semibold text-purple-400">
-								Full Stack Developer
+								Full-Stack Developer
 							</span>
 							. I architect and deliver scalable, cloud-native,
-							and distributed systems with a focus on
-							backend-first full stack development.
+							and distributed systems with a backend-first focus.
 						</p>
-						<p className="mt-3 text-xl text-gray-400">
-							With 3+ years of experience at{" "}
+						<p className="mt-3 text-xl text-gray-300">
+							With 3+ years at{" "}
 							<span className="font-semibold text-indigo-400">
 								Uber
 							</span>{" "}
@@ -86,10 +85,10 @@ export const About = () => {
 							, I specialize in building low-latency APIs, robust
 							microservices, and high-performance UIs for fintech,
 							ERP, and enterprise platforms. My toolkit includes
-							Java, Spring Boot, React, Node.js, GraphQL, Docker,
-							Kubernetes, and AWS.
+							Java, Spring Boot, React.js, Node.js, GraphQL,
+							Docker, Kubernetes, and AWS.
 						</p>
-						<p className="mt-3 text-xl text-gray-400">
+						<p className="mt-3 text-xl text-gray-300">
 							When I’m not optimizing system reliability or
 							automating CI/CD pipelines, you’ll find me
 							experimenting with distributed architectures,
@@ -102,9 +101,9 @@ export const About = () => {
 				<div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 					{[
 						{
-							title: "8+ Projects",
+							title: "10+ Projects",
 							subtitle:
-								"From Cloud-Native to Production-Ready ☁️🚀",
+								"From Cloud-Native to Production-Ready 🚀",
 						},
 						{
 							title: "3+ Years",
