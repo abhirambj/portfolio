@@ -66,34 +66,36 @@ export const About = () => {
 
 					<div className="text-center lg:text-left max-w-lg">
 						<p className="mt-4 text-xl text-gray-300 leading-relaxed">
-							Hi! I'm Abhiram — your friendly neighborhood{" "}
+							Hi! I&apos;m Abhiram — a passionate{" "}
 							<span className="font-semibold text-purple-400">
-								Full-Stack Developer
-							</span>
-							. I architect and deliver scalable, cloud-native,
-							and distributed systems with a backend-first focus.
+								Full-Stack Software Engineer
+							</span>{" "}
+							specializing in architecting scalable, cloud-native,
+							and distributed systems with an emphasis on robust
+							backend solutions.
 						</p>
 						<p className="mt-3 text-xl text-gray-300">
-							With 3+ years at{" "}
-							<span className="font-semibold text-indigo-400">
-								Uber
-							</span>{" "}
-							and{" "}
+							With 3+ years’ experience—including delivering
+							impactful solutions at{" "}
 							<span className="font-semibold text-purple-400">
 								Agilant
+							</span>{" "}
+							and as a consultant for{" "}
+							<span className="font-semibold text-indigo-400">
+								Uber
 							</span>
-							, I specialize in building low-latency APIs, robust
-							microservices, and high-performance UIs for fintech,
-							ERP, and enterprise platforms. My toolkit includes
-							Java, Spring Boot, React.js, Node.js, GraphQL,
-							Docker, Kubernetes, and AWS.
+							—I specialize in building low-latency APIs,
+							resilient microservices, and high-performance UIs
+							across fintech, ERP, and enterprise platforms. My
+							toolkit spans Java, Spring Boot, React.js, Node.js,
+							GraphQL, Docker, Kubernetes, and AWS.
 						</p>
 						<p className="mt-3 text-xl text-gray-300">
-							When I’m not optimizing system reliability or
-							automating CI/CD pipelines, you’ll find me
-							experimenting with distributed architectures,
-							deploying containerized workloads, or debating tabs
-							vs. spaces (team tabs, obviously).
+							Beyond optimizing reliability or automating CI/CD
+							pipelines, I enjoy experimenting with distributed
+							architectures, deploying containerized workloads,
+							mentoring fellow engineers, and keeping up with the
+							latest in cloud tech (plus, I’m always team tabs!).
 						</p>
 					</div>
 				</motion.div>
@@ -103,21 +105,22 @@ export const About = () => {
 						{
 							title: "10+ Projects",
 							subtitle:
-								"From Cloud-Native to Production-Ready 🚀",
+								"Enterprise-Scale, From Idea to Deployment 🚀",
 						},
 						{
 							title: "3+ Years",
 							subtitle:
-								"Building APIs, Distributed Systems, CI/CD 🔁",
+								"Delivering Low-Latency, Cloud-Native Systems 🔁",
 						},
 						{
-							title: "Tech Stack",
+							title: "Tech Toolbox",
 							subtitle:
 								"Java, Spring Boot, React, AWS, Docker, GraphQL, Kubernetes",
 						},
 						{
 							title: "Certifications",
-							subtitle: "Oracle Cloud Certified Associate 🤖",
+							subtitle:
+								"Oracle Cloud Infrastructure Foundations Associate 2021 🤖",
 						},
 					].map((item, index) => (
 						<motion.div

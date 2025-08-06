@@ -159,7 +159,7 @@ const Skills = () => {
 			<SectionHeader
 				title={"Skills."}
 				subtitle={
-					"Empowering My Code with the Best Tools and Technologies"
+					"Building Robust Solutions with Modern Tools & Technologies"
 				}
 			/>
 			<div className="text-center md:text-left">
@@ -209,7 +209,7 @@ const Skills = () => {
 				<SectionHeader
 					title={"Certifications."}
 					subtitle={
-						"Unlocking New Heights: Recognitions That Shape My Journey"
+						"Validated Expertise: Certifications That Advance My Impact"
 					}
 				/>
 				<motion.div

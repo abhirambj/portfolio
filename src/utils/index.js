@@ -5,15 +5,15 @@ import lld from "../assets/images/lld.png";
 
 export const headlines = [
 	"Hi, I'm Abhiram.",
-	"Full Stack Developer.",
-	"Full Stack Developer with 3+ years’ experience delivering scalable, cloud-native solutions for fintech, ERP, healthcare, and e-commerce. Specialized in Java, Spring Boot, React.js, and AWS, with deep expertise in microservices, REST APIs, and distributed systems for high-traffic platforms.",
+	"Full Stack Software Engineer.",
+	"Full Stack Software Engineer with 3+ years’ experience delivering scalable, cloud-native enterprise applications for 10,000+ daily users. Specialized in Java, Spring Boot, React.js, and AWS, with deep expertise in microservices, REST APIs, and distributed systems. Recognized for optimizing CI/CD pipelines (50% faster deployments), reducing application latency (30%+), and designing robust, event-driven AWS systems for high-impact domains like fintech, ERP, and e-commerce.",
 ];
 
 export const projects = [
 	{
 		title: "Peak Physique",
 		description:
-			"Constructed an end-to-end fitness platform for 400+ users that lifted engagement 40% via integrated onboarding, workout, and meal-tracking modules. Achieved 100% compliance with GDPR and HIPAA by layering JWT auth and fine-grained RBAC. Cut p95 page load 3s through query tuning and Redis in-memory caching.",
+			"Engineered an end-to-end fitness management platform for 400+ active users across 3 organizations — achieved a 40% user engagement boost and 25% client retention via real-time tracking, integrated onboarding, and meal planning modules. Ensured 100% GDPR and HIPAA compliance with JWT authentication and RBAC. Enhanced backend with MySQL/Redis caching, reducing p95 page loads by 66% and cutting cloud costs 35%.",
 		tags: [
 			"Jakarta EE",
 			"JSF",
@@ -29,7 +29,7 @@ export const projects = [
 	{
 		title: "TogaCommerce",
 		description:
-			"Overhauled a legacy catalog for 500+ enterprise users, attaining WCAG 2.1 AA and 100% mobile parity. Assembled a design-system package that trimmed UI duplication 35% and lifted engineering throughput. Streamlined Redux selectors and GraphQL fragments, driving 20% faster render cycles.",
+			"Overhauled a legacy product catalog for 500+ enterprise users, achieving WCAG 2.1 AA accessibility and full mobile parity. Developed a design system package that reduced UI duplication by 35% and improved engineering velocity. Optimized Redux selectors and GraphQL fragments, enabling 20% faster render cycles.",
 		tags: [
 			"React",
 			"TypeScript",
@@ -45,7 +45,7 @@ export const projects = [
 	{
 		title: "Portfolio v2",
 		description:
-			"Modern portfolio website showcasing projects and experience. Built with React, Tailwind CSS, and a focus on accessibility and responsive design.",
+			"Modern, accessible portfolio site showcasing projects and technical depth. Built with React and Tailwind CSS for optimal performance and responsive UX.",
 		image: image_portfolio,
 		tags: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
 		linkGithub: "https://github.com/abhirambj/portfolio",
@@ -57,7 +57,7 @@ export const projects = [
 		linkGithub: "https://github.com/abhirambj/portfolio-v1",
 		linkOnline: "https://abhirambj.github.io/portfolio-v1/",
 		description:
-			"Previous iteration of my personal website, leveraging React and Tailwind CSS for UI and GitHub Pages for deployment.",
+			"Previous iteration of my personal site, built using React and Tailwind CSS for UI and GitHub Pages for deployment.",
 		tags: [
 			"React",
 			"Tailwind CSS",
@@ -70,7 +70,7 @@ export const projects = [
 		title: "Issue Tracking System",
 		linkGithub: "https://github.com/abhirambj/IssueTrackingSystem",
 		description:
-			"Full-stack platform for tracking and managing issues, featuring RBAC and a scalable MySQL-backed data layer (Java, Jakarta EE, Hibernate).",
+			"Robust full-stack issue management platform with RBAC and a scalable MySQL/Hibernate data layer.",
 		tags: ["Java", "MySQL", "Hibernate", "Jakarta EE"],
 	},
 ];
@@ -88,7 +88,7 @@ export const skillsWork = [
 	"Bootstrap",
 	"Storybook",
 	"GraphQL",
-	"PostgresQL",
+	"PostgreSQL",
 	"MySQL",
 	"MongoDB",
 	"DynamoDB",
@@ -118,12 +118,12 @@ export const skillsWork = [
 	"Distributed Systems",
 	"Git",
 	"Agile/Scrum",
-	"Open Authorization 2.0",
+	"OAuth2",
 	"JSON Web Tokens (JWT)",
 ];
 
 export const certificates = [
-	"Oracle Cloud Infrastructure Foundations 2021 Certified Associate",
+	"Oracle Cloud Infrastructure Foundations Associate (2021)",
 ];
 
 export const articles = [
@@ -146,7 +146,7 @@ export const articles = [
 export const metadata = {
 	title: "Abhiram Bylahalli Jagadish",
 	description:
-		"Portfolio of a Full Stack Developer and backend engineer specializing in scalable, cloud-native, and distributed systems. Explore my projects, skills, and career path.",
+		"Portfolio of a Full Stack Software Engineer specializing in scalable, cloud-native, and distributed systems. Explore projects, skills, and achievements from a career focused on delivering high-impact software for enterprise outcomes.",
 	imageURL:
 		"https://avatars.githubusercontent.com/u/54413769?s=400&u=08698e1c29bb5f6894a7752691b35dee33b478ac&v=4",
 	pageUrl: "https://abhirambj.github.io/portfolio/",
@@ -174,21 +174,20 @@ export const workExperiences = [
 			"GitHub Actions",
 		],
 		achievements: [
-			"Built a React + TypeScript component library used by two internal teams, trimming average cycle time by 30% and saving $15k annually.",
-			"Refactored Redux selectors and batched GraphQL queries, shaving 200 ms off median render time and raising CSAT from 78 → 93.",
-			"Hardened Spring Boot endpoints with JWT, OAuth2, and role-based access, cutting post-release defects 15%.",
-			"Helped automate CI/CD with Jenkins & Docker; cut deployment time from 20 min → 10 min.",
-			"Deployed Terraform modules that spin up disposable EKS clusters in 8 min, saving 30 infra-hours per quarter.",
-			"Added GitHub Dependabot scans and OWASP dependency checks to the pipeline.",
-			"Migrated nightly batch job to AWS Lambda (Python 3.11) triggered by CloudWatch Events, cutting infra cost by 40%.",
+			"Engineered a reusable React & TypeScript component library adopted by two product teams, reducing frontend delivery times by 30% and saving $15,000/year.",
+			"Optimized Redux state management and GraphQL batching, shaving off 200ms from render time and raising customer SAT from 78 to 93.",
+			"Automated deployments using Jenkins and Docker CI/CD, halving pipeline times to 10 minutes with a 99.5% deployment success rate.",
+			"Hardened Spring Boot endpoints with JWT, OAuth2, and RBAC, cutting post-release defects by 15%.",
+			"Deployed Terraform modules for disposable EKS clusters (8-min spinup), saving 30 infra-hours/quarter.",
+			"Added GitHub Dependabot scans and OWASP checks to the deployment pipeline.",
+			"Migrated a nightly batch job to AWS Lambda (Python 3.11) triggered by CloudWatch Events, reducing infra cost by 40%.",
 		],
 	},
 	{
-		company:
-			"Accenture Solutions Pvt Ltd. (Consultant at Uber Technologies Inc)",
+		company: "Uber Technologies (via Accenture)",
 		period: "Oct 2021 - Jul 2023",
 		duration: "(1 year 10 months)",
-		role: "Associate Software Developer – Consultant",
+		role: "Associate Software Developer",
 		type: "Full-time",
 		location: "Bengaluru, India",
 		technologies: [
@@ -208,11 +207,11 @@ export const workExperiences = [
 			"Git/GitHub",
 		],
 		achievements: [
-			"Contributed to Oracle AP/AR workflow improvements that handle 8k daily transactions while reducing manual effort 40% and accelerating month-end close 20%.",
-			"Built React dashboards backed by GraphQL, reducing page load from 800 ms → 500 ms.",
-			"Synchronized Oracle ERP with AWS DynamoDB & RDS via event-driven CDC, slashing data-sync errors 25% and supporting $2M+ monthly throughput.",
-			"Mentored four junior engineers (team of 6).",
-			"Automated CloudFormation stacks for S3 bucket policies & IAM roles, complementing Terraform workflows.",
+			"Streamlined Oracle AP/AR workflows (8,000+ transactions/day), reducing manual work by 40% and improving month-end close times by 20%.",
+			"Architected event-driven CDC to sync Oracle with AWS (DynamoDB, RDS), reducing data sync errors by 25% while supporting $2M+ monthly throughput.",
+			"Built scalable React dashboards with GraphQL; improved page load by 37% (from 800ms to 500ms) for 200+ finance users.",
+			"Mentored four junior engineers on best practices and code reviews within a six-person team.",
+			"Automated CloudFormation stacks for S3 and IAM, boosting DevOps efficiency.",
 		],
 	},
 	{
@@ -234,11 +233,11 @@ export const workExperiences = [
 			"PM2",
 		],
 		achievements: [
-			"Shipped a cloud-native ordering platform serving 5k+ B2B/B2C transactions monthly with real-time inventory updates.",
-			"Decomposed the monolith into Node.js microservices orchestrated by Next.js SSR, accelerating feature rollouts 25%.",
-			"Added composite indexes and partition pruning PostgreSQL, cutting slow-query alerts by 60%.",
-			"Introduced Kafka-based event bus for order and payment events, guaranteeing eventual consistency across services.",
-			"Enforced SOC-2 controls: encrypted PII at rest with AWS KMS and rotated secrets via AWS Secrets Manager.",
+			"Designed a cloud-native e-commerce platform serving 5,000+ B2B/B2C monthly transactions with real-time inventory sync.",
+			"Led migration from a monolithic app to Node.js microservices and Next.js SSR, accelerating feature delivery by 25% and reducing deployment complexity by 40%.",
+			"Enhanced PostgreSQL via composite indexes and partitioning, eliminating 60% of slow-query alerts (2.1s→850ms avg response).",
+			"Introduced Kafka-based event bus for payment/order workflows, ensuring eventual consistency.",
+			"Enforced SOC2 controls: encrypted PII with AWS KMS and rotated secrets with AWS Secrets Manager.",
 		],
 	},
 ];
@@ -246,23 +245,23 @@ export const workExperiences = [
 export const educationHistory = [
 	{
 		institution: "Illinois Institute of Technology",
-		degree: "Masters in Information Technology Management (MAS)",
+		degree: "Masters in Science, Information Technology",
 		duration: "Aug 2023 - May 2025",
 		location: "Chicago, IL, USA",
 		courses: [
-			"Object Oriented Application Development using Java",
+			"Object-Oriented Application Development (Java)",
 			"Full Stack Web Development",
-			"Android Application Development using Java",
+			"Android Application Development (Java)",
 			"Open Source Programming",
 			"Cloud Computing",
-			"Service Oriented Architecture",
+			"Service-Oriented Architecture",
 			"Database Management Systems",
 		],
 	},
 	{
 		institution: "Visvesvaraya Technological University",
 		degree: "Bachelor of Engineering in Computer Science",
-		duration: "Aug 2017 - May 2021",
+		duration: "Aug 2017 - Jul 2021",
 		location: "Belagavi, Karnataka, India",
 		courses: [
 			"Data Structures",
