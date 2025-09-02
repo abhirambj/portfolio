@@ -39,8 +39,8 @@ const NavBar = () => {
 			initial={{ y: -100, opacity: 0 }}
 			className={`fixed top-0 w-2/3 transform -translate-x-1/2 rounded-lg z-50 transition-all duration-300 ${
 				isScrolled
-					? "bg-white bg-opacity-10 backdrop-blur-xl shadow-lg"
-					: "bg-transparent"
+					? "bg-white bg-opacity-10 backdrop-blur-xl shadow-lg mt-6"
+					: "bg-transparent mt-0"
 			}`}
 		>
 			<nav className="max-w-screen-xl mx-auto px-4 md:px-8 py-4 flex justify-between items-center no-print">
@@ -92,9 +92,9 @@ const NavBar = () => {
 				</button>
 
 				<ul
-					className={`md:flex items-center space-x-6 ${
+					className={`md:flex items-center md:gap-x-6 ${
 						isMobileMenuOpen
-							? "flex-col absolute top-full left-0 w-full bg-gray-900 p-6"
+							? "flex flex-col absolute top-full left-0 w-full bg-gray-900 p-6 gap-y-4"
 							: "hidden"
 					} md:static`}
 				>
@@ -114,14 +114,13 @@ const NavBar = () => {
 									duration={500}
 									spy={true}
 									offset={-50}
-									activeClass="text-secondary"
-									className="cursor-pointer relative flex items-center rounded-lg px-3 py-1 font-josefin-sans text-gray-300 hover:text-secondary transition-all duration-300"
+									activeClass="bg-gradient-to-br from-indigo-200/20 to-indigo-400/10 border border-indigo-300/30 shadow-lg backdrop-blur-lg text-white"
+									className="cursor-pointer relative flex items-center rounded-lg px-3 py-1 font-josefin-sans text-gray-300 transition duration-200 box-border border border-transparent hover:bg-gradient-to-br hover:from-indigo-200/20 hover:to-indigo-400/10 hover:border-indigo-300/30 hover:shadow-lg hover:backdrop-blur-lg hover:text-white"
 									onClick={() => setIsMobileMenuOpen(false)}
 								>
 									<span className="relative z-10">
 										{item}
 									</span>
-									<span className="absolute inset-0 rounded-lg bg-white bg-opacity-10 blur-md transition-opacity duration-300 opacity-0 group-hover:opacity-100"></span>
 								</ScrollLink>
 							</li>
 						))
@@ -129,11 +128,11 @@ const NavBar = () => {
 						<li className="relative group">
 							<NavLink
 								to="/"
-								className="cursor-pointer relative flex items-center rounded-lg px-3 py-1 font-josefin-sans text-gray-300 hover:text-secondary transition-all duration-300"
+								className="cursor-pointer relative flex items-center rounded-lg px-3 py-1 font-josefin-sans text-gray-300 transition duration-200 box-border border border-transparent hover:bg-gradient-to-br hover:from-indigo-200/20 hover:to-indigo-400/10 hover:border-indigo-300/30 hover:shadow-lg hover:backdrop-blur-lg hover:text-white"
+								activeClassName="bg-gradient-to-br from-indigo-200/20 to-indigo-400/10 border border-indigo-300/30 shadow-lg backdrop-blur-lg text-white"
 								onClick={() => setIsMobileMenuOpen(false)}
 							>
 								<span className="relative z-10">Home</span>
-								<span className="absolute inset-0 rounded-lg bg-white bg-opacity-10 blur-md transition-opacity duration-300 opacity-0 group-hover:opacity-100"></span>
 							</NavLink>
 						</li>
 					)}

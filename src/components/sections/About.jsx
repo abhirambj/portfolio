@@ -8,7 +8,6 @@ import profile from "../../assets/images/image.png";
 export const About = () => {
 	const control = useAnimation();
 	const [ref, inView] = useInView();
-
 	useEffect(() => {
 		if (inView) {
 			control.start("visible");
@@ -16,7 +15,6 @@ export const About = () => {
 			control.start("hidden");
 		}
 	}, [control, inView]);
-
 	return (
 		<section className="relative text-white py-20" id="about">
 			<div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16 text-center">
@@ -63,43 +61,47 @@ export const About = () => {
 							transition={{ duration: 10, repeat: Infinity }}
 						></motion.div>
 					</motion.div>
-
 					<div className="text-center lg:text-left max-w-lg">
 						<p className="mt-4 text-xl text-gray-300 leading-relaxed">
-							Hi! I&apos;m Abhiram — a passionate{" "}
+							Hey there! I&apos;m Abhiram — a&nbsp;
 							<span className="font-semibold text-purple-400">
 								Full-Stack Software Engineer
-							</span>{" "}
-							specializing in architecting scalable, cloud-native,
-							and distributed systems with an emphasis on robust
-							backend solutions.
+							</span>
+							&nbsp;with a love for all things cloud, code, and
+							caffeine.
 						</p>
 						<p className="mt-3 text-xl text-gray-300">
-							With 3+ years’ experience—including delivering
-							impactful solutions at{" "}
+							Over the last 3+ years, I’ve shipped systems that
+							make scale look easy. Whether I’m building snappy
+							React UIs, tuning Java microservices so fast they
+							practically teleport, or spinning up cloud infra
+							that auto-heals like magic, I’m always looking for
+							creative ways to turn ideas into robust,
+							enterprise-ready apps.
+						</p>
+						<p className="mt-3 text-xl text-gray-300">
+							I’ve leveled-up platforms for&nbsp;
 							<span className="font-semibold text-purple-400">
 								Agilant
-							</span>{" "}
-							and as a consultant for{" "}
+							</span>
+							&nbsp;and
 							<span className="font-semibold text-indigo-400">
 								Uber
 							</span>
-							—I specialize in building low-latency APIs,
-							resilient microservices, and high-performance UIs
-							across fintech, ERP, and enterprise platforms. My
-							toolkit spans Java, Spring Boot, React.js, Node.js,
-							GraphQL, Docker, Kubernetes, and AWS.
+							, deploying solutions that cut wait times, boost
+							team happiness, and keep users coming back for more.
+							My favorite stack moves: Java, Spring Boot, React,
+							AWS, Docker, GraphQL, and a healthy dose of animated
+							GIFs in code reviews.
 						</p>
 						<p className="mt-3 text-xl text-gray-300">
-							Beyond optimizing reliability or automating CI/CD
-							pipelines, I enjoy experimenting with distributed
-							architectures, deploying containerized workloads,
-							mentoring fellow engineers, and keeping up with the
-							latest in cloud tech (plus, I’m always team tabs!).
+							When I’m not chasing milliseconds or spinning up
+							containers, you’ll catch me swapping dev memes,
+							mentoring fellow engineers, or defending why tabs
+							are superior to spaces (it’s science!). 🚀
 						</p>
 					</div>
 				</motion.div>
-
 				<div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 					{[
 						{
@@ -145,5 +147,4 @@ export const About = () => {
 		</section>
 	);
 };
-
 export default About;

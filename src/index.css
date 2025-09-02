@@ -47,6 +47,7 @@ img {
     .active {
         @apply text-secondary;
     }
+
 }
 
 @keyframes spin-slow {

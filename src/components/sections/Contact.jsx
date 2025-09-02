@@ -66,7 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative py-8 px-8 text-white bg-gray-900" id="contact">
+    <section className="relative py-16 px-8 text-white bg-gray-900 pb-32" id="contact">
       {showConfetti && <Confetti width={width} height={height} />}
 
       <div className="max-w-4xl mx-auto mt-16">
