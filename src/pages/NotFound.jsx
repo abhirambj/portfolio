@@ -25,14 +25,18 @@ const NotFound = () => {
 				<h1 className="text-[10rem] font-extrabold tracking-widest">
 					404
 				</h1>
-
 				<div className="bg-secondary px-2 text-sm rounded rotate-12 absolute">
 					Page Not Found
 				</div>
-
+				<p className="mt-8 text-lg text-center text-primary-text">
+					Oops! Looks like you wandered off the main branch.
+					<br />
+					{`Let's guide you back home 🚀`}
+				</p>
 				<button className="mt-5">
 					<Link
-						to="/portfolio"
+						to="/"
+						aria-label="Go Home"
 						className="relative inline-block text-sm font-semibold text-white group focus:outline-none focus:ring"
 					>
 						<span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-700 opacity-20 group-hover:opacity-40 transition-all duration-500 rounded-lg"></span>

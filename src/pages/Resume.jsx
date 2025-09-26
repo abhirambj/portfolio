@@ -17,7 +17,7 @@ import {
 const Resume = () => {
 	const [isEditing, setIsEditing] = useState(false);
 	const [description, setDescription] = useState(
-		"Full Stack Developer with 3+ years of hands-on experience designing and delivering scalable, cloud-native applications across fintech, ERP, healthcare, and e-commerce. Specialized in Java, Spring Boot, React.js, and AWS, with expertise in architecting microservices, optimizing REST APIs, and implementing robust CI/CD pipelines using modern DevOps practices. Proven record of building low-latency, high-availability systems and driving user experience through strong ownership and cross-functional collaboration on business-critical features."
+		"Hey there! I'm Abhiram — Full Stack Developer with 3+ years building fintech, ERP, e-commerce, and health-tech fun. <br><br> Powered by Java, Spring Boot, React, AWS, and lots of coffee, I'm happiest shipping low-latency features, scaling APIs, and sneaking ML ideas into production. From tuning microservices that practically teleport to battling CI/CD dragons and delighting users, I love turning challenges into code and teams into friends.<br><br>If you enjoy systems that scale, code memes, or a good tabs-vs-spaces debate, say hi!"
 	);
 
 	const handleSave = () => {
@@ -30,7 +30,6 @@ const Resume = () => {
 			<div className="mt-16 grid place-items-center w-full">
 				<NavBar />
 			</div>
-
 			<section className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 py-8">
 				{/* Name and Title */}
 				<div className="text-left">
@@ -96,10 +95,7 @@ const Resume = () => {
 							<div className="text-white/80 leading-relaxed font-mono text-sm">
 								<p
 									dangerouslySetInnerHTML={{
-										__html: description.replace(
-											/\*\*(.*?)\*\*/g,
-											"<strong>$1</strong>"
-										),
+										__html: description,
 									}}
 								/>
 							</div>

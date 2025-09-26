@@ -20,7 +20,7 @@ export const About = () => {
 			<div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-16 text-center">
 				<SectionHeader
 					title="About Me."
-					subtitle="In Pursuit of Excellence: My Personal Odyssey"
+					subtitle="Engineer. Learner. Coffee-fueled Cloud Enthusiast."
 				/>
 				<motion.div
 					ref={ref}
@@ -63,42 +63,48 @@ export const About = () => {
 					</motion.div>
 					<div className="text-center lg:text-left max-w-lg">
 						<p className="mt-4 text-xl text-gray-300 leading-relaxed">
-							Hey there! I&apos;m Abhiram — a&nbsp;
+							Hey there! I&apos;m Abhiram — a{" "}
 							<span className="font-semibold text-purple-400">
 								Full-Stack Software Engineer
 							</span>
-							&nbsp;with a love for all things cloud, code, and
-							caffeine.
+							, cloud-native system builder, and explorer of
+							ML-powered adventures. I believe every bug squashed
+							deserves a coffee, and every feature has a story.
 						</p>
 						<p className="mt-3 text-xl text-gray-300">
-							Over the last 3+ years, I’ve shipped systems that
-							make scale look easy. Whether I’m building snappy
-							React UIs, tuning Java microservices so fast they
-							practically teleport, or spinning up cloud infra
-							that auto-heals like magic, I’m always looking for
-							creative ways to turn ideas into robust,
-							enterprise-ready apps.
+							With over 3 years of professional tinkering, I've
+							helped platforms (from startups to Fortune 100s)
+							scale up, ship fast, and smile at their dashboards.
+							My happy place: designing fast APIs, writing robust
+							Java/React code, and making servers spin up (or
+							heal) on demand.
 						</p>
 						<p className="mt-3 text-xl text-gray-300">
-							I’ve leveled-up platforms for&nbsp;
+							Was lucky to help{" "}
 							<span className="font-semibold text-purple-400">
 								Agilant
 							</span>
-							&nbsp;and
+							,{" "}
 							<span className="font-semibold text-indigo-400">
 								Uber
-							</span>
-							, deploying solutions that cut wait times, boost
-							team happiness, and keep users coming back for more.
-							My favorite stack moves: Java, Spring Boot, React,
-							AWS, Docker, GraphQL, and a healthy dose of animated
-							GIFs in code reviews.
+							</span>{" "}
+							and more — slicing deployment times, boosting team
+							delight, or making ops teams' lives easier. Favorite
+							stack-moves? Anything Java, Spring Boot, React, AWS,
+							Docker, GraphQL, or a new JS build tool nobody else
+							uses yet.
 						</p>
 						<p className="mt-3 text-xl text-gray-300">
-							When I’m not chasing milliseconds or spinning up
-							containers, you’ll catch me swapping dev memes,
-							mentoring fellow engineers, or defending why tabs
-							are superior to spaces (it’s science!). 🚀
+							I'm diving deeper into AI/ML — building with
+							TensorFlow, scikit-learn, and PyTorch, and dreaming
+							up products where software gets smarter with every
+							commit.
+						</p>
+						<p className="mt-3 text-xl text-gray-300">
+							When I’m not coding, you’ll find me mentoring devs,
+							meme-tagging in code reviews, debating tabs vs
+							spaces (team tabs!), or exploring Chicago’s brunch
+							spots. 🚀
 						</p>
 					</div>
 				</motion.div>
@@ -121,8 +127,7 @@ export const About = () => {
 						},
 						{
 							title: "Certifications",
-							subtitle:
-								"Oracle Cloud Infrastructure Foundations Associate 2021 🤖",
+							subtitle: "Oracle Cloud Infrastructure (2021) 🤖", // keep only the latest/relevant
 						},
 					].map((item, index) => (
 						<motion.div

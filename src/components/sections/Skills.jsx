@@ -1,5 +1,9 @@
 import { motion, useAnimation } from "framer-motion";
 import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import SectionHeader from "../ui/SectionHeader";
+import { skillsWork, certificates } from "../../utils/index";
+import React from "react";
 import {
 	FaCode,
 	FaReact,
@@ -11,9 +15,9 @@ import {
 	FaCss3Alt,
 	FaBootstrap,
 	FaAws,
-	FaJs,
 	FaAngular,
 } from "react-icons/fa";
+import { TbBrandOauth, TbBrandNextjs, TbRouteSquare2 } from "react-icons/tb";
 import { MdOutlineDataObject, MdArchitecture } from "react-icons/md";
 import {
 	SiTailwindcss,
@@ -41,78 +45,81 @@ import {
 	SiJunit5,
 	SiGithubactions,
 	SiJsonwebtokens,
-	SiAuth0,
-	SiNeo4J,
 	SiPm2,
+	SiTensorflow,
+	SiPytorch,
+	SiScikitlearn,
+	SiHuggingface,
 } from "react-icons/si";
 import { DiOpensource } from "react-icons/di";
-import SectionHeader from "../ui/SectionHeader";
-import { skillsWork, certificates } from "../../utils";
-import React from "react";
-import { useInView } from "react-intersection-observer";
 import { GrOracle, GrGraphQl } from "react-icons/gr";
-import { TbBrandNextjs, TbRouteSquare2 } from "react-icons/tb";
 import { BiGitBranch } from "react-icons/bi";
 import { BsKanbanFill } from "react-icons/bs";
 
 const skillIcons = {
-	ReactJS: <FaReact size={36} />,
-	JUnit: <SiJunit5 size={36} />,
-	NodeJS: <FaNodeJs size={36} />,
-	"AWS RDS": <FaAws size={36} />,
-	Java: <FaJava size={36} />,
-	Neo4j: <SiNeo4J size={36} />,
-	Python: <FaPython size={36} />,
-	Redis: <SiRedis size={36} />,
-	Angular: <FaAngular size={36} />,
-	GraphQL: <GrGraphQl size={36} />,
-	"AWS EC2": <SiAmazonec2 size={36} />,
-	"AWS S3": <FaAws size={36} />,
-	"AWS EBS": <FaAws size={36} />,
-	JavaScript: <FaJsSquare size={36} />,
-	HTML: <FaHtml5 size={36} />,
-	CSS: <FaCss3Alt size={36} />,
-	Sentry: <SiSentry size={36} />,
-	"Tailwind CSS": <SiTailwindcss size={36} />,
-	Bootstrap: <FaBootstrap size={36} />,
-	Docker: <SiDocker size={36} />,
-	Kubernetes: <SiKubernetes size={36} />,
-	"AWS Lambda": <SiAwslambda size={36} />,
-	MongoDB: <SiMongodb size={36} />,
-	Postman: <SiPostman size={36} />,
-	Jenkins: <SiJenkins size={36} />,
-	PostgresQL: <SiPostgresql size={36} />,
-	Storybook: <SiStorybook size={36} />,
-	MySQL: <SiMysql size={36} />,
-	Git: <BiGitBranch size={36} />,
-	"Object-Oriented Programming": <MdOutlineDataObject size={36} />,
-	Cypress: <SiCypress size={36} />,
-	"CI/CD Pipelines": <SiJenkins size={36} />,
-	"Distributed Systems": <SiGithubactions size={36} />,
-	Microservices: <MdArchitecture size={36} />,
-	"Spring Boot": <SiSpring size={36} />,
-	"GitHub Actions": <SiGithubactions size={36} />,
-	DynamoDB: <SiAmazondynamodb size={36} />,
-	"Data Structures & Algorithms": <MdOutlineDataObject size={36} />,
-	Kafka: <SiApachekafka size={36} />,
-	PM2: <SiPm2 size={36} />,
-	Mockito: <FaJs size={36} />,
-	"AWS CloudWatch": <SiAmazoncloudwatch size={36} />,
-	"Open Source": <DiOpensource size={36} />,
-	"Open Authorization 2.0": <SiAuth0 />,
-	"JSON Web Tokens (JWT)": <SiJsonwebtokens size={36} />,
-	"Next.js": <TbBrandNextjs size={36} />,
-	TypeScript: <SiTypescript size={36} />,
-	Redux: <SiRedux size={36} />,
-	Prometheus: <SiPrometheus size={36} />,
-	Grafana: <SiGrafana size={36} />,
-	"RESTful APIs": <TbRouteSquare2 size={36} />,
-	"Agile/Scrum": <BsKanbanFill size={36} />,
+	"scikit-learn": <SiScikitlearn size={32} />,
+	HuggingFace: <SiHuggingface size={32} />,
+	TensorFlow: <SiTensorflow size={32} />,
+	PyTorch: <SiPytorch size={32} />,
+	ReactJS: <FaReact size={32} />,
+	NodeJS: <FaNodeJs size={32} />,
+	Java: <FaJava size={32} />,
+	Python: <FaPython size={32} />,
+	JavaScript: <FaJsSquare size={32} />,
+	TypeScript: <SiTypescript size={32} />,
+	"Spring Boot": <SiSpring size={32} />,
+	"Next.js": <TbBrandNextjs size={32} />,
+	Redux: <SiRedux size={32} />,
+	"Tailwind CSS": <SiTailwindcss size={32} />,
+	Bootstrap: <FaBootstrap size={32} />,
+	GraphQL: <GrGraphQl size={32} />,
+	Storybook: <SiStorybook size={32} />,
+	PostgreSQL: <SiPostgresql size={32} />,
+	MySQL: <SiMysql size={32} />,
+	MongoDB: <SiMongodb size={32} />,
+	DynamoDB: <SiAmazondynamodb size={32} />,
+	Redis: <SiRedis size={32} />,
+	"AWS Lambda": <SiAwslambda size={32} />,
+	"AWS EKS": <SiKubernetes size={32} />,
+	"AWS S3": <FaAws size={32} />,
+	"AWS RDS": <FaAws size={32} />,
+	"AWS EBS": <FaAws size={32} />,
+	"AWS CloudWatch": <SiAmazoncloudwatch size={32} />,
+	"AWS EC2": <SiAmazonec2 size={32} />,
+	Docker: <SiDocker size={32} />,
+	Kubernetes: <SiKubernetes size={32} />,
+	"GitHub Actions": <SiGithubactions size={32} />,
+	Jenkins: <SiJenkins size={32} />,
+	"CI/CD Pipelines": <SiJenkins size={32} />,
+	Kafka: <SiApachekafka size={32} />,
+	PM2: <SiPm2 size={32} />,
+	Postman: <SiPostman size={32} />,
+	JUnit: <SiJunit5 size={32} />,
+	Mockito: <SiJunit5 size={32} />,
+	Cypress: <SiCypress size={32} />,
+	Sentry: <SiSentry size={32} />,
+	Prometheus: <SiPrometheus size={32} />,
+	Grafana: <SiGrafana size={32} />,
+	Microservices: <MdArchitecture size={32} />,
+	"RESTful APIs": <TbRouteSquare2 size={32} />,
+	"Distributed Systems": <MdArchitecture size={32} />,
+	Git: <BiGitBranch size={32} />,
+	HTML: <FaHtml5 size={32} />,
+	CSS: <FaCss3Alt size={32} />,
+	Angular: <FaAngular size={32} />,
+	"Object-Oriented Programming": <MdOutlineDataObject size={32} />,
+	"Data Structures & Algorithms": <MdOutlineDataObject size={32} />,
+	"Open Source": <DiOpensource size={32} />,
+	OAuth2: <TbBrandOauth size={32} />,
+	"Open Authorization 2.0": <TbBrandOauth size={32} />,
+	JWT: <SiJsonwebtokens size={32} />,
+	"JSON Web Tokens (JWT)": <SiJsonwebtokens size={32} />,
+	"Agile/Scrum": <BsKanbanFill size={32} />,
 };
 
 const certIcons = {
-	"Oracle Cloud Infrastructure Foundations Associate 2021": (
-		<GrOracle size={36} />
+	"Oracle Cloud Infrastructure Foundations Associate (2021)": (
+		<GrOracle size={32} />
 	),
 };
 
